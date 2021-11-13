@@ -15,11 +15,32 @@
 		adipisci, natus deserunt nisi ipsam repellendus, iusto commodi maxime perspiciatis voluptatum provident
 		exercitationem consequatur? Adipisci.</p>
 	<a class="bold red" href="#">RANDOM TAG</a>
-	<h1 class="bold">Why is this title at the bottom?</h1>
+	<h1 onclick="hello_world()" class="bold">Why is this title at the bottom?</h1>
 	<h2 class="red" id="smaller">Why is this title smaller?</h2>
 	<h3 class="bold red" id="smallest">Why is this even smaller?</h3>
 	<a class="red" href="#">This is a fake link</a>
 
+	<section id="card_section">
+		<article class="card_container" onclick="remove_card(this)" ondblclick="double_click('card double clicked')">
+			<img src='http://unsplash.it/g/300?random&gravity=center' alt='random image' />
+			<h4>This is a sample title</h4>
+		</article>
+	</section>
+
+	<button onclick="add_cards()">Add More Cards</button>
+
+
+
+
+
+
+
+
+
+
+
+
+	<script src="https://cdn.jsdelivr.net/npm/js-cookie@3.0.1/dist/js.cookie.min.js"></script>
 	<script src="/js/app.js"></script>
 </body>
 

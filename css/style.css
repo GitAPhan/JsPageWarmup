@@ -7,8 +7,30 @@
 img, iframe {
   max-width: 100%;
 }
-/*# sourceMappingURL=style.css.map */
 
-#image {
-  font
+#card_section {
+  display: -ms-grid;
+  display: grid;
+  position: absolute;
+  -ms-grid-columns: (minmax(150px, 1fr))[auto-fill];
+      grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  width: 100%;
+  -webkit-column-gap: 10px;
+          column-gap: 10px;
+  row-gap: 10px;
+  place-items: center;
 }
+
+.card_container {
+  display: -ms-grid;
+  display: grid;
+  position: relative;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px black solid;
+}
+
+.card_container img {
+  border-radius: 5px;
+}
+/*# sourceMappingURL=style.css.map */

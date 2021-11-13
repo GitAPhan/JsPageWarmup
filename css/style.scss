@@ -2,3 +2,27 @@
 @import "color";
 @import "header";
 @import "footer";
+
+
+
+#card_section {
+    display              : grid;
+    position             : absolute;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    width                : 100%;
+    column-gap           : 10px;
+    row-gap              : 10px;
+    place-items          : center;
+}
+
+.card_container {
+    display      : grid;
+    position     : relative;
+    padding      : 10px;
+    border-radius: 5px;
+    border       : 1px black solid;
+
+    img {
+        border-radius: 5px;
+    }
+}
